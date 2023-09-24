@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO DO LIST</title>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="todo.css">
+
+</head>
+<body>
+    <div id="container">
+        <div id="Todo">
+            <h1>To Do List</h1>
+            <div id="List-form">
+                <input id="addTask" type="text" placeholder="Add the Task...">
+                <button type="submit" id="addBtn">Add</button>
+            </div>
+            <div class="Filter">
+                <span onclick="renderList('all')" id="total-task" class="active">Total: 0</span>
+                <span onclick="renderList('completed')" id="Completed-task">Completed: 0</span>
+                <span onclick="renderList('pending')" id="Pending-task">Pending: 0</span>
+            </div>
+            <ul id="task-display">
+                
+            </ul>
+        </div>
+    </div>
+    <script src="todo.js"></script>
+</body>
+</html>
